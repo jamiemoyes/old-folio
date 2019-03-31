@@ -90,8 +90,6 @@ function typeWriter() {
     }
 }
 
-
-
 // function responsiveMenu(size) {
 //     if (size.matches) {
 //         document.getElementsByClassName("projDescription").style.visibility = "hidden" ;

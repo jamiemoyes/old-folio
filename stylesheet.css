@@ -366,6 +366,24 @@ div.circTxt p {
     box-shadow: none;
 }
 
+#section05 {
+    text-align: center;
+    background: #111;
+    height: 20vh;
+    padding: 2rem;
+    font-family: 'Raleway', sans-serif;
+    color: #c2c2c2;
+}
+
+#atSign {
+    color: gray;
+    font-size: 2rem;
+}
+
+#section05 p {
+    font-family: 'Raleway', sans-serif;
+}
+
 @media only screen and (max-width: 600px) {
     div.circTxt {
         font-size: 10rem;
