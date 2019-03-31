@@ -61,14 +61,14 @@ div.circTxt p {
 }
 
 #arrow a {
-    bottom: 20px;
+    bottom: 20vh;
     left: 50%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-decoration: none;
-    margin-top: 0%;
+    margin-top: 0;
 }
 
 #arrow a span {
@@ -92,11 +92,9 @@ div.circTxt p {
 
 #arrow {
     text-align: center;
-    /*font-weight: bold;*/
     font-size: 2vw;
     color: white;
 }
-
 
 #section01 {
     min-height: 100vh;
@@ -106,6 +104,7 @@ div.circTxt p {
     background-size: cover;
     position: relative;
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -116,7 +115,7 @@ div.circTxt p {
 }
 
 #writingText {
-    font-size: 5rem;
+    font-size: 5vw;
     font-family: 'Playfair Display', serif;
 }
 
@@ -127,24 +126,24 @@ div.circTxt p {
     height: 50%;
 }
 
-#secondaryText {
+.secondaryText {
     display: block;
     float: left;
     width: 50%;
-    font-size: 3rem;
+    font-size: 3vw;
     font-family: 'Staatliches', cursive;
     color: #1d1d1d;
     margin-top: 20%;
 }
-#secondaryText2 {
-    display: block;
-    float: left;
-    width: 50%;
-    font-size: 3rem;
-    font-family: 'Staatliches', cursive;
-    color: #1d1d1d;
-    margin-top: 20%;
-}
+/*#secondaryText2 {*/
+    /*display: block;*/
+    /*float: left;*/
+    /*width: 50%;*/
+    /*font-size: 3rem;*/
+    /*font-family: 'Staatliches', cursive;*/
+    /*color: #1d1d1d;*/
+    /*margin-top: 20%;*/
+/*}*/
 
 #section03 {
     min-height: 100vh;
@@ -300,7 +299,7 @@ div.circTxt p {
     box-shadow: none;
 }
 #music {
-    background: url("JM Gradients.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("JM Gradients.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
@@ -309,7 +308,7 @@ div.circTxt p {
 }
 
 #art {
-    background: url("Blue Tings.jpg");
+    background: url('Blue Tings.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
@@ -318,7 +317,7 @@ div.circTxt p {
 }
 
 #calculator {
-    background: url("Calculator.png");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("Calculator.png");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
@@ -326,7 +325,7 @@ div.circTxt p {
     box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
 }
 #breakout {
-    background: url("Breakout.png");
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("Breakout.png");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
@@ -334,7 +333,7 @@ div.circTxt p {
     box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
 }
 #caras {
-    background: url("Painting Orders.png");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("Painting Orders.png");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
@@ -403,47 +402,64 @@ div.circTxt p {
         padding-top: 0;
         width: calc(100% - 4rem);
     }
-    #secondaryText {
-        margin-top: 45%;
-        display: block;
-        padding: 2rem;
-        font-size: 2rem;
-        width: calc(100% - 4rem);
+
+    #writingText {
+        font-size: 1.7rem;
     }
 
     .subHeader {
-        font-size: 3rem;
-        padding: 0;
+        font-size: 2rem;
     }
 
     .subHeaderContainer {
-        padding: 3rem 0;
+        padding: 5rem 0;
     }
 
-    .imageContainer, .imageContainer2 {
+    .imageContainer2 {
         max-width: 100%;
-        max-height: 20vh;
+        /*height: calc(100%/3);*/
     }
 
     .projDescription {
         visibility: hidden;
+        display: none;
     }
 
     .flexEx {
+        align-items: stretch;
         flex-direction: column;
         flex-shrink: 1;
+        flex-grow: 1;
+        overflow-y: auto;
+        max-height: calc(100vh - 12rem);
     }
 
     .middleTitle {
         font-size: 1.5rem;
     }
 
-    .imageContainer2 {
-        height: calc(100vh/4);
+    #secondaryText {
+        margin-top: 45vh;
+        display: block;
+        padding: 0 2rem ;
+        font-size: 2rem;
+        width: calc(100% - 4rem);
     }
 
-    #section03 {
-        max-height: calc(60vh + 6rem  );
+    #secondaryText2 {
+        margin-top: 2vh;
+    }
+
+    #secondaryText2, #secondaryText {
+        font-size: 1.7rem;
+    }
+
+    #section02{
+        height: 100vh;
+    }
+
+    #section03, #section04 {
+        height: 100vh;
     }
 }
 
