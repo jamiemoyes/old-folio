@@ -415,7 +415,7 @@ div.circTxt p {
 
     #secondaryText2 {
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 4rem;
         padding: 2rem;
         padding-top: 0;
         width: calc(100% - 4rem);
@@ -460,16 +460,17 @@ div.circTxt p {
         margin-top: 45vh;
         display: block;
         padding: 0 2rem ;
-        font-size: 2rem;
+        font-size: 3rem;
         width: calc(100% - 4rem);
     }
+
 
     #secondaryText2 {
         margin-top: 2vh;
     }
 
     #secondaryText2, #secondaryText {
-        font-size: 1.7rem;
+        font-size: 8vw;
     }
 
     #section02{
@@ -478,6 +479,10 @@ div.circTxt p {
 
     #section03, #section04 {
         height: 100vh;
+    }
+
+    #section05 {
+        height: 10vh;
     }
 }
 
