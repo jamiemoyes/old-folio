@@ -150,6 +150,7 @@ div.circTxt p {
     min-height: 100vh;
 }
 
+
 .subHeaderContainer {
     background-color: #111;
     text-align: center;
@@ -180,71 +181,65 @@ div.circTxt p {
     transition: 0.4s;
 }
 
-.imageContainer2 img {
-    max-width: 100%;
-    filter: brightness(30%);
+/*.imageContainer2 img {*/
+    /*max-width: 100%;*/
+    /*filter: brightness(30%);*/
+    /*width: 100%;*/
+/*}*/
+
+.flexEx {
+    display: flex;
+    /*justify-content: space-evenly;*/
+    flex-basis: auto;
+    flex-direction: row;
     width: 100%;
+    /*height: 100vh;*/
+    max-height: calc(100vh - 15rem);
+    overflow: hidden;
 }
 
 .imageContainer2 {
+    text-decoration: none;
+    flex: 1;
     text-align: center;
     transition: 0.4s;
     margin: 0;
-    overflow: hidden;
-    position: relative;
-    text-align: left;
-    color: white;
-    max-height: calc(100vh - 15.1rem);
+    color: whitesmoke;
+    max-height: 100%;
     max-width: calc(100%/3);
     float: left;
+    padding: 15% 0;
+    -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41)
 }
 
-.imageContainer img {
-    max-width: 100%;
-    filter: brightness(30%);
-    width: 100%;
+.imageContainer2 p {
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
 }
 
-.imageContainer a {
-    margin: 0;
+.imageContainer2 a {
+    text-decoration: none;
 }
 
-.imageContainer:hover .behindImage {
-    filter: brightness(50%);
-}
+.middleTitle {
+    font-family: "Playfair Display", cursive;
 
-.imageContainer {
-    transition: 0.4s;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    text-align: left;
+    filter: brightness(100%);
+    text-transform: uppercase;
+    font-weight: bold;
+    /*margin-top: 50%;*/
     color: white;
-    max-height: calc(100vh - 15.1rem);
-    max-width: calc(100%/3);
-    float: left;
+    /*line-height: calc(50vw - 15rem);*/
+    vertical-align: middle;
+    font-size: 2rem;
 }
 
-.imageContainer2 .middleText {
-    top: 50%;
-    left: 50%;
-    border-bottom: none;
-
-}
-
-.middleText {
-    font-family: Raleway;
-    color: white;
-    position: absolute;
-    max-width: 60%;
-    top: 25%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    border-bottom: solid 3px #e75d56;
-}
-
-.middleText p {
+.middleTitleContainer p {
     margin-top: 0;
+    color: white;
 }
 
 .middleText h2 {
@@ -257,6 +252,119 @@ div.circTxt p {
 
 .projDescription {
     display: block;
+}
+
+#youtube {
+    background: url("Serpent.PNG");
+    background-position-y: top;
+    -webkit-background-size: cover;
+    background-size: 150%;
+    -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#music:hover + #youtube {
+    -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#music:hover {
+    box-shadow: none;
+}
+
+#youtube:hover + #art {
+    -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#youtube:hover + #music {
+    -webkit-box-shadow: inset 20px -25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px -25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px -25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#youtube:hover {
+    box-shadow: none;
+}
+
+#art:hover + #youtube {
+    -webkit-box-shadow: inset 20px -25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px -25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px -25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#art:hover {
+    box-shadow: none;
+}
+#music {
+    background: url("JM Gradients.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#art {
+    background: url("Blue Tings.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#calculator {
+    background: url("Calculator.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+}
+#breakout {
+    background: url("Breakout.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+}
+#caras {
+    background: url("Painting Orders.png");
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
+    background-size: 150%;
+}
+
+#calculator:hover {
+    box-shadow: none;
+}
+
+#calculator:hover + #breakout {
+    -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#breakout:hover + #caras {
+    -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    -moz-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+    box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
+}
+
+#breakout:hover {
+    box-shadow: none;
+}
+
+#caras:hover {
+    box-shadow: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -294,7 +402,6 @@ div.circTxt p {
         padding: 2rem;
         padding-top: 0;
         width: calc(100% - 4rem);
-
     }
     #secondaryText {
         margin-top: 45%;
@@ -313,7 +420,7 @@ div.circTxt p {
         padding: 3rem 0;
     }
 
-    .imageContainer {
+    .imageContainer, .imageContainer2 {
         max-width: 100%;
         max-height: 20vh;
     }
@@ -322,11 +429,17 @@ div.circTxt p {
         visibility: hidden;
     }
 
-    .middleText {
-        margin-top: 10%;
-        border-bottom: none;
-        text-align: center;
-        margin-left: 0;
+    .flexEx {
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+
+    .middleTitle {
+        font-size: 1.5rem;
+    }
+
+    .imageContainer2 {
+        height: calc(100vh/4);
     }
 
     #section03 {
