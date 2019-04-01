@@ -384,6 +384,15 @@ div.circTxt p {
     font-family: 'Raleway', sans-serif;
 }
 
+
+.logo {
+    margin: 1%;
+    margin-top: 3%;
+    display: inline;
+    height: 5vh;
+    filter: grayscale(100%);
+}
+
 @media only screen and (max-width: 600px) {
     div.circTxt {
         font-size: 10rem;
