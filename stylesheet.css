@@ -369,7 +369,7 @@ div.circTxt p {
 #section05 {
     text-align: center;
     background: #111;
-    height: 20vh;
+    height: 27vh;
     padding: 2rem;
     font-family: 'Raleway', sans-serif;
     color: #c2c2c2;
@@ -384,13 +384,17 @@ div.circTxt p {
     font-family: 'Raleway', sans-serif;
 }
 
+.logo:hover {
+    filter: brightness(100%) grayscale(100%);
+}
 
 .logo {
+    transition: filter 0.4s;
     margin: 1%;
     margin-top: 3%;
     display: inline;
     height: 5vh;
-    filter: grayscale(100%);
+    filter: brightness(80%) grayscale(100%);
 }
 
 @media only screen and (max-width: 600px) {
