@@ -80,8 +80,8 @@ $(function() {
 
 
 var i = 0;
-    var text = "I'm Jamie, I'm in my third year of computer science at Strathclyde.";
-    var speed = 50;
+    var text = "I'm Jamie, I'm in my Fourth year of MEng Computer Science at Strathclyde.";
+    var speed = 20;
 function typeWriter() {
     if (i < text.length) {
         document.getElementById("writingText").innerHTML += text.charAt(i);
