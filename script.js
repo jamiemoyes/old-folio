@@ -47,6 +47,14 @@ $(window).on("load",function() {
     }).scroll(); //invoke scroll-handler on page-load
 });
 
+$(function() {
+    $('a[href*=#]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+    });
+});
+
+
 $(window).on("load",function() {
     $(window).scroll(function() {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
@@ -61,27 +69,9 @@ $(window).on("load",function() {
     }).scroll(); //invoke scroll-handler on page-load
 });
 
-$(function() {
-    $('a[href*=#]').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-    });
-});
-
-// function checkContainer () {
-//     document.getElementById("writingText").innerText = "";
-//     if($('#writingText').is(':visible')){ //if the container is visible on the page
-//     typeWriter();  //Adds a grid to the html
-// } else {
-//     setTimeout(checkContainer, 50); //wait 50 ms, then try again
-// }
-// }
-
-
-
 var i = 0;
-    var text = "I'm Jamie, I'm in my third year of computer science at Strathclyde.";
-    var speed = 50;
+    var text = "I'm Jamie, I'm in my fourth year of MEng Computer Science at Strathclyde.";
+    var speed = 20;
 function typeWriter() {
     if (i < text.length) {
         document.getElementById("writingText").innerHTML += text.charAt(i);
@@ -89,19 +79,3 @@ function typeWriter() {
         setTimeout(typeWriter, speed);
     }
 }
-
-// function responsiveMenu(size) {
-//     if (size.matches) {
-//         document.getElementsByClassName("projDescription").style.visibility = "hidden" ;
-//         // document.body.style.backgroundColor = "red";
-//     } else {
-//         // document.body.style.backgroundColor = "yellow";
-//         document.getElementsByClassName("projDescription").style.visibility = "100%";
-//     }
-// }
-
-// var size = window.matchMedia("(max-width: 600px)");
-// responsiveMenu(size);
-// size.addListener(responsiveMenu);
-// size.addEventListener("change", responsiveMenu);
-
