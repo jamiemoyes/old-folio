@@ -3,91 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <title>Jamie Moyes</title>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Aleo|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:600|Playfair+Display:700|Roboto+Condensed|Staatliches" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ee6a6f">
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <section id="section01" class="demo">
     <div id="container">
-<div id="header">
-    <div class="circleText">
-        <div class="circTxt" id="test"></div>
-    </div>
+        <div id="header">
+            <div class="circleText">
+                <div class="circTxt" id="test"></div>
+            </div>
 
-    <div id="nav">
-        <a href="Jamie%20Moyes%20CV.pdf" target="_blank">Resume.</a>
-    </div>
-</div>
-
-    <div id="desc">
-        <p>Psst! This Way!</p>
-    </div>
-        <div id="arrowContainer">
-    <div id="arrow">
-        <a href="#section02"><span></span></a>
-    </div>
+            <div id="nav">
+                <a href="Jamie%20Moyes%20CV.pdf" target="_blank">Resume.</a>
+            </div>
         </div>
-    <p id="output">
 
-    </p>
+        <div id="desc">
+            <p>Psst! This Way!</p>
+        </div>
+        <div id="arrowContainer">
+            <div id="arrow">
+                <a href="#section02"><span></span></a>
+            </div>
+        </div>
+        <p id="output">
+
+        </p>
     </div>
 </section>
+
+
+
 <section id="section02">
     <div id="typeWriterContainer">
-    <p id="writingText"></p>
+        <p id="writingText"></p>
     </div>
-    <p id="secondaryText" class="secondaryText">I have a passion for software development and web design.</p>
-    <p id="secondaryText2" class="secondaryText">Here you will find my projects and resume.</p>
+    <div class="secondaryText-container">
+        <p id="secondaryText" class="secondaryText">I have a passion for software development and web design.</p>
+        <p id="secondaryText2" class="secondaryText">Here you will find my projects and resume.</p>
+
+    </div>
+
 </section>
 
 <section id="section03">
-    <div class="subHeaderContainer">
-        <p class="subHeader"><span class="underline"><span>University Assignments</span></span></p>
-    </div>
-    <div class="flexEx">
-    <div class="imageContainer2" id="calculator">
-        <a target="_blank" href="https://devweb2018.cis.strath.ac.uk/~rqb16188/currencycalc/Calculator/">
-                <h2 class="middleTitle">Currency Converter</h2>
-                <p class="projDescription">Graphical currency converter using AJAX to get live rates from ECB</p>
-        </a>
+    <div class="fourth-year-section">
+        <img alt="Illustration of bus" class="circle-img" src="assets/Bus_Illustration%20.png">
+
+        <div class="fourth-year-project-info">
+            <h1>
+                Fourth Year Project
+            </h1>
+            <p>
+                For my 4th year project, I'm building a public bus app for people with Down Syndrome.
+                Research has found that people with Down Syndrome struggle with using public transport,
+                especially buses, which greatly hinders their independence and self esteem, so I’m
+                creating an app to make it an easier and less stressful user experience.
+            </p>
+            <p><b>
+                Technologies used include:
+
+            </b>
+            </p>
+
+            <ul class="tech-icons">
+                <li><a target="_blank" href="https://flutter.dev/"><img src="assets/Flutter%20Icon.png"></a></li>
+                <li><a target="_blank" href="https://dart.dev/"><img src="assets/Dart%20Icon.jpg"></a></li>
+                <li><a target="_blank" href="https://cloud.google.com/maps-platform/places/"><img src="assets/places-api.png"></a></li>
+                <li><a target="_blank" href="https://www.transportapi.com/"><img src="assets/transportapi.png"></a></li>
+            </ul>
+
+        </div>
     </div>
 
-    <div class="imageContainer2" id="breakout">
-        <a target="_blank" href="https://devweb2018.cis.strath.ac.uk/~rqb16188/breakout/">
-                <h2 class="middleTitle">Breakout Game</h2>
-                <p class="projDescription">Online game using motion sensors to control it</p>
-        </a>
-    </div>
-
-    <div class="imageContainer2" id="caras">
-        <a target="_blank" href="https://devweb2018.cis.strath.ac.uk/~rqb16188/painting_orders/listart.php">
-                <h2 class="middleTitle">Painting Orders</h2>
-                <p class="projDescription">Database driven website for client with login details and admin rights</p>
-        </a>
-    </div>
-    </div>
 </section>
 
 <section id="section04">
-        <div class="subHeaderContainer">
-            <p class="subHeader"><span class="underline"><span>Hobbies</span></span></p>
+    <div class="subHeaderContainer">
+        <p class="subHeader"><span class="underline"><span>University Web Assignments</span></span></p>
+    </div>
+    <div class="flexEx">
+        <div class="imageContainer2" id="calculator">
+            <a target="_blank" href="https://devweb2018.cis.strath.ac.uk/~rqb16188/currencycalc/Calculator/">
+                <h2 class="middleTitle">Currency Converter</h2>
+                <p class="projDescription">Graphical currency converter using AJAX to get live rates from ECB</p>
+            </a>
         </div>
+
+        <div class="imageContainer2" id="breakout">
+            <a target="_blank" href="https://devweb2018.cis.strath.ac.uk/~rqb16188/breakout/">
+                <h2 class="middleTitle">Breakout Game</h2>
+                <p class="projDescription">Online game using motion sensors to control it</p>
+            </a>
+        </div>
+
+        <div class="imageContainer2" id="caras">
+            <a target="_blank" href="https://devweb2018.cis.strath.ac.uk/~rqb16188/painting_orders/listart.php">
+                <h2 class="middleTitle">Painting Orders</h2>
+                <p class="projDescription">Database driven website for client with login details and admin rights</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="section05">
+    <div class="subHeaderContainer">
+        <p class="subHeader"><span class="underline"><span>Hobbies</span></span></p>
+    </div>
     <div class="flexEx">
         <div class="imageContainer2" id="music">
             <a href="https://soundcloud.com/jamiemoyes" target="_blank">
-                    <div class="middleTitleContainer">
+                <div class="middleTitleContainer">
                     <h2 class="middleTitle">Music</h2>
-                    </div>
+                </div>
             </a>
         </div>
 
@@ -108,11 +147,11 @@
         </div>
     </div>
 </section>
-<section id="section05">
+<section id="section06">
     <h2>Contact</h2>
     <div id="logos">
-    <a href="mailto:jamiecmoyes@gmail.com"><img class="logo" src="gmailLogo.png"></a>
-    <a href="https://www.linkedin.com/in/jamiemoyes" target="_blank"><img class="logo" src="LinkedIn.png"></a>
+        <a href="mailto:jamiecmoyes@gmail.com"><img class="logo" src="assets/gmailLogo.png"></a>
+        <a href="https://www.linkedin.com/in/jamiemoyes" target="_blank"><img class="logo" src="assets/LinkedIn.png"></a>
     </div>
 </section>
 

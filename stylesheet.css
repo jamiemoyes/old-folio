@@ -13,6 +13,7 @@ body {
 #header {
     width: 100%;
 }
+
 .circleText {
     display: inline-block;
     text-align: left;
@@ -29,6 +30,7 @@ body {
 
 #nav a{
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
     color: white;
     font-size: 2rem;
     text-decoration: none;
@@ -36,6 +38,8 @@ body {
 
 div.circTxt {
     font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+
     display: inline-block;
     margin-bottom: 128px;
     color: whitesmoke;
@@ -100,52 +104,100 @@ div.circTxt p {
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('Mirror.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/Mirror.jpg');
     background-size: cover;
     position: relative;
     font-family: 'Raleway', sans-serif;
     overflow: hidden;
 }
 
+/*
+ ------------------------------------------------
+
+    Fourth year project section
+*/
+
+#section03 {
+    height: 80vh;
+}
+
+.fourth-year-section {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 7rem;
+}
+.fourth-year-section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.fourth-year-project-info {
+    padding: 2rem 2rem 0 5rem;
+    width: 40%;
+    font-family: 'Raleway', sans-serif;;
+}
+
+.circle-img {
+    width: 25vw;
+    height: 25vw;
+    object-fit: contain;
+}
+
+.tech-icons ul {
+    list-style-type: none;
+    display: inline-block;
+}
+.tech-icons li {
+    margin: 1rem;
+    float: left;
+    list-style-type: none;
+}
+
+.tech-icons img {
+    background-blend-mode: darken;
+    width: 3vw;
+    height: 3vw;
+    object-fit: contain;
+}
+
+
+/*------------------------------------------------*/
 
 #section02 {
     background-color: whitesmoke;
-    min-height: calc(100vh - 8rem);
-    padding: 4rem;
+    min-height: calc(40vh);
+    padding: 10rem;
 }
 
 #writingText {
-    font-size: 5vw;
+    font-size: 3vw;
     font-family: 'Playfair Display', serif;
 }
 
 #typeWriterContainer {
-    position: absolute;
-    width: 90%;
+
+    margin: auto;
+    width: 50vw;
+    min-height: 30vh;
     overflow: hidden;
-    height: 50%;
+}
+
+.secondaryText-container {
+    width: 50vw;
+    margin: auto;
 }
 
 .secondaryText {
     display: block;
     float: left;
     width: 50%;
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: 'Staatliches', cursive;
     color: #1d1d1d;
-    margin-top: 25%;
 }
-/*#secondaryText2 {*/
-    /*display: block;*/
-    /*float: left;*/
-    /*width: 50%;*/
-    /*font-size: 3rem;*/
-    /*font-family: 'Staatliches', cursive;*/
-    /*color: #1d1d1d;*/
-    /*margin-top: 20%;*/
-/*}*/
 
-#section03 {
+#section04 {
     min-height: 100vh;
 }
 
@@ -181,9 +233,9 @@ div.circTxt p {
 }
 
 /*.imageContainer2 img {*/
-    /*max-width: 100%;*/
-    /*filter: brightness(30%);*/
-    /*width: 100%;*/
+/*max-width: 100%;*/
+/*filter: brightness(30%);*/
+/*width: 100%;*/
 /*}*/
 
 .flexEx {
@@ -225,13 +277,10 @@ div.circTxt p {
 
 .middleTitle {
     font-family: "Playfair Display", cursive;
-
     filter: brightness(100%);
     text-transform: uppercase;
     font-weight: bold;
-    /*margin-top: 50%;*/
     color: white;
-    /*line-height: calc(50vw - 15rem);*/
     vertical-align: middle;
     font-size: 2rem;
 }
@@ -254,7 +303,7 @@ div.circTxt p {
 }
 
 #youtube {
-    background: url("Serpent.PNG");
+    background: url("assets/Serpent.PNG");
     background-position-y: top;
     -webkit-background-size: cover;
     background-size: 150%;
@@ -299,7 +348,7 @@ div.circTxt p {
     box-shadow: none;
 }
 #music {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("JM Gradients.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/JM Gradients.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
@@ -308,7 +357,7 @@ div.circTxt p {
 }
 
 #art {
-    background: url('Blue Tings.jpg');
+    background: url('assets/Blue Tings.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
@@ -317,7 +366,7 @@ div.circTxt p {
 }
 
 #calculator {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("Calculator.png");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/Calculator.png");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
@@ -325,7 +374,7 @@ div.circTxt p {
     box-shadow: inset 20px 25px 25px -8px rgba(0,0,0,0.41);
 }
 #breakout {
-    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("Breakout.png");
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/Breakout.png");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
@@ -333,7 +382,7 @@ div.circTxt p {
     box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
 }
 #caras {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("Painting Orders.png");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/Painting Orders.png");
     -webkit-background-size: cover;
     background-size: cover;
     -webkit-box-shadow: inset 0px 25px 25px -8px rgba(0,0,0,0.41);
@@ -366,7 +415,7 @@ div.circTxt p {
     box-shadow: none;
 }
 
-#section05 {
+#section06 {
     text-align: center;
     background: #111;
     height: 27vh;
@@ -380,7 +429,7 @@ div.circTxt p {
     font-size: 2rem;
 }
 
-#section05 p {
+#section06 p {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -419,8 +468,9 @@ div.circTxt p {
     }
 
     #section02 {
-        padding: 0.5rem;
+        padding: 10rem;
     }
+
     #writingText {
         font-size: 2rem;
         padding: 2rem;
@@ -428,14 +478,14 @@ div.circTxt p {
 
     #secondaryText2 {
         margin-top: 0;
-        font-size: 4rem;
-        padding: 2rem;
-        padding-top: 0;
-        width: calc(100% - 4rem);
+        font-size: 1rem;
+        padding: 0 1rem 1rem;
     }
 
     #writingText {
-        font-size: 1.7rem;
+        font-size: 5vw;
+        width: 90%;
+        padding: 0;
     }
 
     .subHeader {
@@ -468,34 +518,81 @@ div.circTxt p {
     .middleTitle {
         font-size: 1.5rem;
     }
+    /*------------------------------------*/
+    /*Section 2*/
+
+    #typeWriterContainer {
+        width: calc(100vw - 4rem);
+        min-height: 15vh;
+        margin: auto;
+        padding: 0 2rem;
+    }
 
     #secondaryText {
-        margin-top: 45vh;
         display: block;
         padding: 0 2rem ;
-        font-size: 3rem;
+        font-size: 2.5rem;
         width: calc(100% - 4rem);
     }
 
-
     #secondaryText2 {
         margin-top: 2vh;
+        padding: 0 2rem ;
+
     }
 
     #secondaryText2, #secondaryText {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
-    #section02{
+    .secondaryText-container {
+        width: 100vw;
+    }
+
+    #section02 {
+        padding: 2rem;
+        height: 60vh;
+    }
+
+    #section03{
         height: 100vh;
     }
 
-    #section03, #section04 {
+    #section04, #section05 {
         height: 100vh;
     }
 
-    #section05 {
+    #section06 {
         height: 10vh;
+    }
+
+    /*    Fourth year section */
+    .fourth-year-section {
+        padding: 2rem;
+        text-align: center;
+        display: block;
+    }
+
+    .fourth-year-project-info {
+        padding: 0;
+        width: 100%;
+    }
+    .circle-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .fourth-year-project-info h1, .fourth-year-project-info p {
+        font-size: 1rem;
+    }
+
+    .tech-icons {
+        margin: auto;
+    }
+    .tech-icons img{
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
     }
 }
 
