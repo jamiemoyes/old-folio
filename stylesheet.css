@@ -168,6 +168,7 @@ div.circTxt p {
     background-color: whitesmoke;
     min-height: calc(40vh);
     padding: 10rem;
+    overflow: hidden;
 }
 
 #writingText {
