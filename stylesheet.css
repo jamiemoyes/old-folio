@@ -118,14 +118,14 @@ div.circTxt p {
 */
 
 #section03 {
-    height: 70vh;
+    height: 80vh;
 }
 
 .fourth-year-section {
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
-    padding: 7rem;
+    padding: 3rem 7rem;
 }
 .fourth-year-section h1 {
     font-family: 'Playfair Display', serif;
@@ -133,14 +133,15 @@ div.circTxt p {
     margin-bottom: 2rem;
 }
 .fourth-year-project-info {
-    padding: 10rem;
-    width: 30%;
+    padding: 2rem 2rem 0 5rem;
+    width: 40%;
     font-family: 'Raleway', sans-serif;;
 }
 
 .circle-img {
-    width: 30rem;
-    height: 30rem;
+    width: 25vw;
+    height: 25vw;
+    object-fit: contain;
 }
 
 .tech-icons ul {
@@ -155,8 +156,8 @@ div.circTxt p {
 
 .tech-icons img {
     background-blend-mode: darken;
-    width: 5rem;
-    height: 5rem;
+    width: 3vw;
+    height: 3vw;
     object-fit: contain;
 }
 
@@ -232,9 +233,9 @@ div.circTxt p {
 }
 
 /*.imageContainer2 img {*/
-    /*max-width: 100%;*/
-    /*filter: brightness(30%);*/
-    /*width: 100%;*/
+/*max-width: 100%;*/
+/*filter: brightness(30%);*/
+/*width: 100%;*/
 /*}*/
 
 .flexEx {
@@ -482,7 +483,9 @@ div.circTxt p {
     }
 
     #writingText {
-        font-size: 1.7rem;
+        font-size: 5vw;
+        width: 90%;
+        padding: 0;
     }
 
     .subHeader {
@@ -515,14 +518,22 @@ div.circTxt p {
     .middleTitle {
         font-size: 1.5rem;
     }
+    /*------------------------------------*/
+    /*Section 2*/
+
+    #typeWriterContainer {
+        width: calc(100vw - 4rem);
+        min-height: 15vh;
+        margin: auto;
+        padding: 0 2rem;
+    }
 
     #secondaryText {
         display: block;
         padding: 0 2rem ;
-        font-size: 3rem;
+        font-size: 2.5rem;
         width: calc(100% - 4rem);
     }
-
 
     #secondaryText2 {
         margin-top: 2vh;
@@ -531,7 +542,7 @@ div.circTxt p {
     }
 
     #secondaryText2, #secondaryText {
-        font-size: 8vw;
+        font-size: 6vw;
     }
 
     .secondaryText-container {
@@ -540,9 +551,10 @@ div.circTxt p {
 
     #section02 {
         padding: 2rem;
+        height: 60vh;
     }
 
-    #section02, #section03{
+    #section03{
         height: 100vh;
     }
 
@@ -554,7 +566,7 @@ div.circTxt p {
         height: 10vh;
     }
 
-/*    Fourth year section */
+    /*    Fourth year section */
     .fourth-year-section {
         padding: 2rem;
         text-align: center;
