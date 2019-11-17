@@ -589,6 +589,8 @@ div.circTxt p {
 
     .tech-icons {
         margin: auto;
+        display: flex;
+        justify-content: space-around;
     }
     .tech-icons img{
         width: 2rem;
